@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Контейнеры друг под другом - Без классов</title>
+    <title>Сдвиг контейнера - Без классов</title>
 </head>
 <body>
 
-    <div style="width: 300px; border: 1px solid black; margin-bottom: 20px;">
-        <p style="padding-right: 20px;">Текст в первом контейнере. Текст сдвинут вправо.</p>
-    </div>
-
-    <div style="width: 300px; border: 1px solid black;">
-        <p style="padding-left: 20px;">Текст во втором контейнере. Текст сдвинут влево.</p>
+    <div style="width: 600px; height: 700px; border: 1px solid black; position: relative; transform: translate(270px, 130px);">
+        <p>Этот абзац текста находится внутри контейнера `div`.</p>
+        <p style="color: red;">Этот абзац красного цвета.</p>
+        <p style="font-weight: bold;">Этот абзац выделен жирным шрифтом.</p>
+        <p>Этот абзац имеет 
+            <span style="color: green; font-style: italic;">зеленый и курсивный</span>
+             текст внутри.</p>
+        <p style="padding-left: 20px;">Этот абзац имеет отступ слева.</p>
+        <p>Размер шрифта: <span style="font-size: 1.2em;">увеличенный</span>.</p>
     </div>
 
 </body>
