@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Мой первый сайт</title>
+    <title>Контейнеры в строчку - Без классов</title>
 </head>
 <body>
-    <h1 style="color: blue;">Добро пожаловать на мой сайт!</h1>
 
-    <div style="color: black; width: 500px; border: 1px solid black; padding: 20px;">
-        <p>Этот абзац текста находится внутри контейнера `div`.</p>
-        <p style="color: red;">Этот абзац красного цвета.</p>
-        <p style="color: green; font-weight: bold;">Этот абзац выделен жирным шрифтом.</p>
-        <p style="color: green; padding-left: 50px;">Этот абзац имеет отступ слева.</p>
-        <p>Размер шрифта: <span style="font-size: 1.2em;">увеличенный</span>.</p>
-        <p>Сегодня <span style="font-weight: bold;">очень</span> интересный день. Мы планируем посетить <span style="color: blue; font-style: italic;">новый</span> музей, где представлены экспонаты <span style="text-decoration: underline;">древней</span> цивилизации. Я уверен, что это будет <span style="font-size: 1.2em;">незабываемое</span> приключение!</p>
+    <div style="width: 300px; border: 1px solid black; display: inline-block; margin-right: 20px; vertical-align: top;">
+        <!-- Зеленый: Начало первого контейнера. Задает ширину, границу, отображение в строчку, отступ справа, выравнивание по верху. -->
+        <p style="padding-right: 20px;">
+            <!-- Зеленый: Начало параграфа внутри первого контейнера. Задает отступ справа для текста. -->
+            Текст в первом контейнере. Сдвинут вправо.
+            <!-- Зеленый: Закрывающий тег параграфа. -->
+        </p>
+        <!-- Зеленый: Закрывающий тег контейнера. -->
+    </div>
+
+    <div style="width: 300px; border: 1px solid black; display: inline-block; vertical-align: top;">
+        <!-- Зеленый: Начало второго контейнера.  Задает ширину, границу, отображение в строчку, выравнивание по верху. -->
+        <p style="padding-left: 20px;">
+            <!-- Зеленый: Начало параграфа внутри второго контейнера. Задает отступ слева для текста. -->
+            Текст во втором контейнере. Сдвинут влево.
+            <!-- Зеленый: Закрывающий тег параграфа. -->
+        </p>
+        <!-- Зеленый: Закрывающий тег контейнера -->
     </div>
 
 </body>
